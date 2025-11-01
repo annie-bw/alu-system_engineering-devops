@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-#continue to server without auth
-ssh -i ~/.ssh/school ubuntu@44.212.2.129
+#Connecting to a server without a password
+Host Ubuntu
+	IdentityFile ~/.ssh/school
+	PasswordAuthentication no
